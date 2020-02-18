@@ -1,0 +1,1 @@
+//export const temp = (element) => { return Math.round(element) + '° C' };

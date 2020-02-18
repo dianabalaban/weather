@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
+import React  from 'react';
 import './App.css';
+import './Functions.js';
+//import Daily from './Daily';
+//import Today from './Today';
+import City from './City';
+import Home from './Home';
+import { BrowserRouter as Router, Route} from 'react-router-dom'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
 
+  return (
+    <Router>
+      <div className="App">
+        <Route path="/" exact component={Home} />
+        <Route path="/Amsterdam" component={City} />
+        <Route path="/Paris" component={City} />
+        <Route path="/London" component={City} />
+      </div>
+    </Router>
+  );
+
+}
 export default App;

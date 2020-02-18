@@ -1,38 +1,126 @@
+.card {
+  width: 27%;
+  padding-left: 0.5em;
+}
+
 .App {
+  color: black;
+  height: 100vh;
+  background-size: cover;
+}
+
+.ams-background {
+  background-image: url('./background-amsterdam3.jpg');
+  background-size: cover;
+}
+
+.lnd-background {
+  background-image: url('./london3.jpg');
+  background-size: cover;
+}
+
+.prs-background {
+  background-image: url('./paris2.jpg');
+  background-size: cover;
+}
+
+.homepage {
+  height: 100vh;
+  width: 99.7%;
+}
+
+.icon {
+  display: inline
+}
+
+a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  font-size: 6rem;
   text-align: center;
+  color: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.amsterdam {
+  height: 33%;
+  opacity: 0.3;
+  width: 100%;
+  background-image: url('./amsti.jpg');
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.amsterdam:hover {
+  opacity: 1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.paris:hover {
+  opacity: 1;
+}
+
+.london:hover {
+  opacity: 1;
+}
+
+.paris {
+  height: 33%;
+  width: 100%;
+  opacity: 0.2;
+  background-size: cover;
+  background-image: url('./ParisFrance_Banner\ copy.jpg');
+}
+
+.london {
+  height: 33%;
+  width: 100%;
+  opacity: 0.2;
+  background-image: url('./london-banner.jpg');
+  background-size: cover;
+}
+
+.containerDaily {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: row;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-between;
+  margin-top: 1em;
+}
+
+.cardElem {
+  font-size: 1.7rem;
+  text-align: center;
+  margin-bottom: 0.1em;
+  padding-left: 0.7em;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.headerContainer {
+  margin: 0 auto;
+  height: 100%;
+  width: 80%;
+  text-align: center;
+  color: white;
+  padding-bottom: 0.3em;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+  font-size: 3.5rem;
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+  font-size: 3rem;
+  display: inline;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.feelsLike {
+  font-size: 1rem;
 }
