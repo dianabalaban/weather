@@ -12,7 +12,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Route path="/" exact component={Home} />
+        <Route path="/weather" exact component={Home} />
         <Route path="/Amsterdam" component={City} />
         <Route path="/Paris" component={City} />
         <Route path="/London" component={City} />
