@@ -8,7 +8,7 @@ export default function City() {
         const [weather, getWeather] = useState([]);
         const [otherData, getOtherData] = useState([]);
         const getInfo = async () => {
-          const response = await fetch('https://api.openweathermap.org/data/2.5/forecast?q='+ pathname+'&units=metric&appid=8f36932e2260c034d41cb86759bb3fd5'
+          const response = await fetch('http://api.openweathermap.org/data/2.5/forecast?q='+ pathname+'&units=metric&appid=8f36932e2260c034d41cb86759bb3fd5'
           );
           const data = await response.json();
           getWeather(data.list); 
