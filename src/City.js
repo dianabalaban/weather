@@ -61,7 +61,7 @@ export default function City() {
         const temp = (element) => { return Math.round(element) + '°C' };
       
         const getNextDate = (dataArray) =>
-          dataArray.findIndex(x => formatDate(x.dt)[1] === "01:00");
+          dataArray.findIndex(x => formatDate(x.dt)[1] === "02:00");
       
       
         const calculate = (dataArray) => {
