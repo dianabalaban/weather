@@ -3,7 +3,7 @@ import { Line } from 'react-chartjs-2';
 
 const Daily = ({ min, max, minwind, maxwind, datemin, datemax, date,hourly }) => {
     const data = { 
-        labels: ['1AM','4AM','10AM','1PM','4PM','7PM', '10PM'], 
+        labels: ['2AM','5AM','11AM','2PM','5PM','8PM', '11PM'], 
         datasets: [
             { label: 'Temperature', data: [],backgroundColor: 'rgba(0, 0, 0, 0)', borderColor:'rgba(66, 135, 245)'}
         ],}
